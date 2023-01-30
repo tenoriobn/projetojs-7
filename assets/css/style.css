@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url(_variaveis.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: var(--roboto);
+}
+
+.container {
+    padding: 0rem 1rem;
+
+    position: relative;
+}
+
+.navbar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.6875rem 1rem;
+}
+
+.navbar__header--mod {
+    padding: 1.6875rem 1rem 1.6875rem 2rem!important;
+}
+
+.nav__button--hamburguer, .nav__button--close {
+    border: none;
+    background: none;
+
+    color: var(--preto);
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.nav__button--hamburguer:hover, .nav__button--close:hover {
+    color: var(--azul);
+}
+
+.nav {
+    background: var(--branco);
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    overflow-x: hidden;
+
+    width: 0%;
+    height: 100%;
+
+    transition: all .5s;
+
+    z-index: 9;
+}
+
+.nav__list {
+    display: inline-block;
+    padding-bottom: 2.5625rem;
+
+    list-style: none;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+
+    color: var(--preto);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+    text-decoration: none;
+
+    padding: 1.5rem 1rem;
+    transition: .5s;
+}
+
+.nav__link:hover {
+    background: var(--azul-claro);
+    border-radius: 3.125rem;
+
+    color: var(--azul);
+}
